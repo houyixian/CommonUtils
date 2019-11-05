@@ -18,6 +18,7 @@
 		5805F12423680F0D003FDFD4 /* CommonUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5805F11C23680F0D003FDFD4 /* CommonUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5861FC8923710F4E00B87984 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5861FC8823710F4E00B87984 /* SnapKit */; };
 		5861FC8B2371100600B87984 /* HorizontalDashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861FC8A2371100600B87984 /* HorizontalDashedLineView.swift */; };
+		58ADDFD923715BA70078E318 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ADDFD823715BA70078E318 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5805F11E23680F0D003FDFD4 /* CommonUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUIKit.h; sourceTree = "<group>"; };
 		5805F11F23680F0D003FDFD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5861FC8A2371100600B87984 /* HorizontalDashedLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDashedLineView.swift; sourceTree = "<group>"; };
+		58ADDFD823715BA70078E318 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				5805F11E23680F0D003FDFD4 /* CommonUIKit.h */,
 				5805F11F23680F0D003FDFD4 /* Info.plist */,
 				5861FC8A2371100600B87984 /* HorizontalDashedLineView.swift */,
+				58ADDFD823715BA70078E318 /* GradientView.swift */,
 			);
 			path = CommonUIKit;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58ADDFD923715BA70078E318 /* GradientView.swift in Sources */,
 				5861FC8B2371100600B87984 /* HorizontalDashedLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

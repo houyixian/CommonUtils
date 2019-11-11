@@ -8,12 +8,11 @@
 
 import UIKit
 import AdvancedUIKit
-import SnapKit
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         let dashedLine = AUHorizontalDashedLineView(frame: CGRect.zero, lineLength: 10, lineSpacing: 2, lineColor: .black)
         view.addSubview(dashedLine)
         dashedLine.snp.makeConstraints { (m) in
@@ -29,6 +28,10 @@ class ViewController: UIViewController {
         dimmingView.snp.makeConstraints { (m) in
             m.edges.equalToSuperview()
         }
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        show(message: "今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子")
     }
 
 

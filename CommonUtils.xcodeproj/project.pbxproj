@@ -17,12 +17,15 @@
 		582962B623790A1D00BD7D12 /* AUHollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962B323790A1D00BD7D12 /* AUHollowView.swift */; };
 		582962B723790A1D00BD7D12 /* AUGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962B423790A1D00BD7D12 /* AUGradientView.swift */; };
 		582962B923790B7F00BD7D12 /* AdvancedUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 582962B823790B7F00BD7D12 /* AdvancedUIKit.podspec */; };
-		5861FC8923710F4E00B87984 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5861FC8823710F4E00B87984 /* SnapKit */; };
+		582962BD23793D0700BD7D12 /* UIViewController+ErrorTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962BC23793D0700BD7D12 /* UIViewController+ErrorTip.swift */; };
+		582962C023793E1300BD7D12 /* AUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962BF23793E1300BD7D12 /* AUViewController.swift */; };
+		585B78AC237981D10003C932 /* AUToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B78AB237981D10003C932 /* AUToastView.swift */; };
 		586DDF792379074B005E2B83 /* AdvancedUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586DDF702379074B005E2B83 /* AdvancedUIKit.framework */; };
 		586DDF802379074B005E2B83 /* AdvancedUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DDF7F2379074B005E2B83 /* AdvancedUIKitTests.swift */; };
 		586DDF822379074B005E2B83 /* AdvancedUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 586DDF722379074B005E2B83 /* AdvancedUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		586DDF852379074B005E2B83 /* AdvancedUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586DDF702379074B005E2B83 /* AdvancedUIKit.framework */; };
 		586DDF862379074B005E2B83 /* AdvancedUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 586DDF702379074B005E2B83 /* AdvancedUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58C82C2623798C1900D226A9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58C82C2523798C1900D226A9 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +78,10 @@
 		582962B223790A1D00BD7D12 /* AUHorizontalDashedLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUHorizontalDashedLineView.swift; sourceTree = "<group>"; };
 		582962B323790A1D00BD7D12 /* AUHollowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUHollowView.swift; sourceTree = "<group>"; };
 		582962B423790A1D00BD7D12 /* AUGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUGradientView.swift; sourceTree = "<group>"; };
-		582962B823790B7F00BD7D12 /* AdvancedUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdvancedUIKit.podspec; sourceTree = SOURCE_ROOT; };
+		582962B823790B7F00BD7D12 /* AdvancedUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AdvancedUIKit.podspec; sourceTree = SOURCE_ROOT; };
+		582962BC23793D0700BD7D12 /* UIViewController+ErrorTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorTip.swift"; sourceTree = "<group>"; };
+		582962BF23793E1300BD7D12 /* AUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUViewController.swift; sourceTree = "<group>"; };
+		585B78AB237981D10003C932 /* AUToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUToastView.swift; sourceTree = "<group>"; };
 		586DDF702379074B005E2B83 /* AdvancedUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdvancedUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		586DDF722379074B005E2B83 /* AdvancedUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedUIKit.h; sourceTree = "<group>"; };
 		586DDF732379074B005E2B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				586DDF852379074B005E2B83 /* AdvancedUIKit.framework in Frameworks */,
-				5861FC8923710F4E00B87984 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C82C2623798C1900D226A9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,14 +154,41 @@
 			path = CommonUtils;
 			sourceTree = "<group>";
 		};
-		586DDF712379074B005E2B83 /* AdvancedUIKit */ = {
+		582962BA23793C8400BD7D12 /* AdvancedUIView */ = {
 			isa = PBXGroup;
 			children = (
-				586DDF722379074B005E2B83 /* AdvancedUIKit.h */,
-				586DDF732379074B005E2B83 /* Info.plist */,
 				582962B423790A1D00BD7D12 /* AUGradientView.swift */,
 				582962B323790A1D00BD7D12 /* AUHollowView.swift */,
 				582962B223790A1D00BD7D12 /* AUHorizontalDashedLineView.swift */,
+				585B78AB237981D10003C932 /* AUToastView.swift */,
+			);
+			path = AdvancedUIView;
+			sourceTree = "<group>";
+		};
+		582962BB23793CB100BD7D12 /* Extension+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				582962BC23793D0700BD7D12 /* UIViewController+ErrorTip.swift */,
+			);
+			path = "Extension+UIKit";
+			sourceTree = "<group>";
+		};
+		582962BE23793DE200BD7D12 /* AdvancedUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				582962BF23793E1300BD7D12 /* AUViewController.swift */,
+			);
+			path = AdvancedUIViewController;
+			sourceTree = "<group>";
+		};
+		586DDF712379074B005E2B83 /* AdvancedUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				582962BE23793DE200BD7D12 /* AdvancedUIViewController */,
+				582962BB23793CB100BD7D12 /* Extension+UIKit */,
+				582962BA23793C8400BD7D12 /* AdvancedUIView */,
+				586DDF722379074B005E2B83 /* AdvancedUIKit.h */,
+				586DDF732379074B005E2B83 /* Info.plist */,
 			);
 			path = AdvancedUIKit;
 			sourceTree = "<group>";
@@ -206,7 +239,6 @@
 			);
 			name = CommonUtils;
 			packageProductDependencies = (
-				5861FC8823710F4E00B87984 /* SnapKit */,
 			);
 			productName = CommonUtils;
 			productReference = 5805F0FC2367EB59003FDFD4 /* CommonUtils.app */;
@@ -226,6 +258,9 @@
 			dependencies = (
 			);
 			name = AdvancedUIKit;
+			packageProductDependencies = (
+				58C82C2523798C1900D226A9 /* SnapKit */,
+			);
 			productName = AdvancedUIKit;
 			productReference = 586DDF702379074B005E2B83 /* AdvancedUIKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -338,6 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585B78AC237981D10003C932 /* AUToastView.swift in Sources */,
+				582962BD23793D0700BD7D12 /* UIViewController+ErrorTip.swift in Sources */,
+				582962C023793E1300BD7D12 /* AUViewController.swift in Sources */,
 				582962B523790A1D00BD7D12 /* AUHorizontalDashedLineView.swift in Sources */,
 				582962B623790A1D00BD7D12 /* AUHollowView.swift in Sources */,
 				582962B723790A1D00BD7D12 /* AUGradientView.swift in Sources */,
@@ -696,7 +734,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5861FC8823710F4E00B87984 /* SnapKit */ = {
+		58C82C2523798C1900D226A9 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5861FC8723710F4E00B87984 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;

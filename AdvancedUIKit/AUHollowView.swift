@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class HollowView: UIView {
+public class AUHollowView: UIView {
     private let topDistance: CGFloat
     private let bottomDistance: CGFloat
     private let leftDistance: CGFloat

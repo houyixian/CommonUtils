@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class HorizontalDashedLineView: UIView {
+public class AUHorizontalDashedLineView: UIView {
 
     private let dashedLineShapeLayer = CAShapeLayer()
 

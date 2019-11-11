@@ -7,21 +7,21 @@
 //
 
 import UIKit
-import CommonUIKit
+import AdvancedUIKit
 import SnapKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let dashedLine = HorizontalDashedLineView(frame: CGRect.zero, lineLength: 10, lineSpacing: 2, lineColor: .black)
+        let dashedLine = AUHorizontalDashedLineView(frame: CGRect.zero, lineLength: 10, lineSpacing: 2, lineColor: .black)
         view.addSubview(dashedLine)
         dashedLine.snp.makeConstraints { (m) in
             m.center.equalToSuperview()
             m.leading.trailing.equalToSuperview()
             m.height.equalTo(2)
         }
-        let dimmingView = HollowView(edge: UIEdgeInsets(top: 56, left: 7.5, bottom: view.bounds.height - 56 - 38, right: 7.5), hollowCornerRadius: 19)
+        let dimmingView = AUHollowView(edge: UIEdgeInsets(top: 56, left: 7.5, bottom: view.bounds.height - 56 - 38, right: 7.5), hollowCornerRadius: 19)
         dimmingView.minHeight = 38
         dimmingView.backgroundColor = .black
         dimmingView.alpha = 0.5

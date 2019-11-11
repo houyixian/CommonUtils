@@ -19,7 +19,7 @@ public enum GradientDirection {
     case TopRightToBottomLeft
 }
 
-public class GradientView: UIView {
+public class AUGradientView: UIView {
 
     private let gradientLayer = CAGradientLayer()
 

@@ -11,29 +11,44 @@ import AdvancedUIKit
 
 class ViewController: UIViewController {
 
+    private let calendarView = AUCalendarView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dashedLine = AUHorizontalDashedLineView(frame: CGRect.zero, lineLength: 10, lineSpacing: 2, lineColor: .black)
-        view.addSubview(dashedLine)
-        dashedLine.snp.makeConstraints { (m) in
-            m.center.equalToSuperview()
-            m.leading.trailing.equalToSuperview()
-            m.height.equalTo(2)
-        }
-        let dimmingView = AUHollowView(edge: UIEdgeInsets(top: 56, left: 7.5, bottom: view.bounds.height - 56 - 38, right: 7.5), hollowCornerRadius: 19)
-        dimmingView.minHeight = 38
-        dimmingView.backgroundColor = .black
-        dimmingView.alpha = 0.5
-        view.addSubview(dimmingView)
-        dimmingView.snp.makeConstraints { (m) in
+//        let dashedLine = AUHorizontalDashedLineView(frame: CGRect.zero, lineLength: 10, lineSpacing: 2, lineColor: .black)
+//        view.addSubview(dashedLine)
+//        dashedLine.snp.makeConstraints { (m) in
+//            m.center.equalToSuperview()
+//            m.leading.trailing.equalToSuperview()
+//            m.height.equalTo(2)
+//        }
+//        let dimmingView = AUHollowView(edge: UIEdgeInsets(top: 56, left: 7.5, bottom: view.bounds.height - 56 - 38, right: 7.5), hollowCornerRadius: 19)
+//        dimmingView.minHeight = 38
+//        dimmingView.backgroundColor = .black
+//        dimmingView.alpha = 0.5
+//        view.addSubview(dimmingView)
+//        dimmingView.snp.makeConstraints { (m) in
+//            m.edges.equalToSuperview()
+//        }
+        view.insertSubview(calendarView, at: 0)
+        calendarView.snp.makeConstraints { (m) in
             m.edges.equalToSuperview()
         }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        calendarView.scrollToBottom()
+        calendarView.isBeginEndlessScroll = true
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         show(message: "今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子")
     }
 
+    @IBAction func reloadCalendarView(_ sender: UIButton) {
+        calendarView.reloadData()
+    }
 
 }
 

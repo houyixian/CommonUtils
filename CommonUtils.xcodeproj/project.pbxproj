@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5803E0ED23FA71C9000AE071 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0EC23FA71C9000AE071 /* UIView+Extension.swift */; };
+		5803E0EF23FA75F7000AE071 /* AUDashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0EE23FA75F7000AE071 /* AUDashedLineView.swift */; };
+		5803E0F123FBC1B6000AE071 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0F023FBC1B6000AE071 /* String+Extension.swift */; };
 		5805F1002367EB59003FDFD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5805F0FF2367EB59003FDFD4 /* AppDelegate.swift */; };
 		5805F1022367EB59003FDFD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5805F1012367EB59003FDFD4 /* SceneDelegate.swift */; };
 		5805F1042367EB59003FDFD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5805F1032367EB59003FDFD4 /* ViewController.swift */; };
@@ -72,6 +75,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5803E0EC23FA71C9000AE071 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5803E0EE23FA75F7000AE071 /* AUDashedLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUDashedLineView.swift; sourceTree = "<group>"; };
+		5803E0F023FBC1B6000AE071 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5805F0FC2367EB59003FDFD4 /* CommonUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5805F0FF2367EB59003FDFD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5805F1012367EB59003FDFD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 				582962B323790A1D00BD7D12 /* AUHollowView.swift */,
 				582962B223790A1D00BD7D12 /* AUHorizontalDashedLineView.swift */,
 				585B78AB237981D10003C932 /* AUToastView.swift */,
+				5803E0EE23FA75F7000AE071 /* AUDashedLineView.swift */,
 			);
 			path = AdvancedUIView;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				582962BC23793D0700BD7D12 /* UIViewController+ErrorTip.swift */,
+				5803E0EC23FA71C9000AE071 /* UIView+Extension.swift */,
+				5803E0F023FBC1B6000AE071 /* String+Extension.swift */,
 			);
 			path = "Extension+UIKit";
 			sourceTree = "<group>";
@@ -404,9 +413,12 @@
 				586CFED023855FC400527061 /* AUCalendarSectionHeaderCollectionReusableView.swift in Sources */,
 				582962C023793E1300BD7D12 /* AUViewController.swift in Sources */,
 				586CFED223855FC400527061 /* AUCalendarEvaluationCollectionViewCell.swift in Sources */,
+				5803E0F123FBC1B6000AE071 /* String+Extension.swift in Sources */,
 				582962B523790A1D00BD7D12 /* AUHorizontalDashedLineView.swift in Sources */,
+				5803E0ED23FA71C9000AE071 /* UIView+Extension.swift in Sources */,
 				582962B623790A1D00BD7D12 /* AUHollowView.swift in Sources */,
 				582962B723790A1D00BD7D12 /* AUGradientView.swift in Sources */,
+				5803E0EF23FA75F7000AE071 /* AUDashedLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

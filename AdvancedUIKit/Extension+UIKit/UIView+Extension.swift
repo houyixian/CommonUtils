@@ -9,6 +9,13 @@
 import UIKit
 import SnapKit
 
+public enum AUMoveDirection {
+    case up
+    case down
+    case left
+    case right
+}
+
 extension UIView {
     /// 增加简单的模糊效果
     /// - Parameter effect: 视觉效果，UIVisualEffect类型
@@ -74,6 +81,28 @@ extension UIView {
         }) { (_) in
             UIView.animate(withDuration: 0.3) { [weak self] in
                 self?.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }
+        }
+    }
+
+    /// 让视图简单的移动
+    /// - Parameter distance: 移动距离
+    /// - Parameter direction: 移动方向，支持上下左右四个方向
+    /// - Parameter duration: 动画时间
+    public func simple(move distance: CGFloat, to direction: AUMoveDirection, withDuration duration: TimeInterval) {
+        UIView.animate(withDuration: duration) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            switch direction {
+            case .up:
+                self.center.y -= distance
+            case .down:
+                self.center.y += distance
+            case .left:
+                self.center.x -= distance
+            case .right:
+                self.center.x += distance
             }
         }
     }

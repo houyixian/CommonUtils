@@ -62,8 +62,9 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        show(message: "今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子")
-        testView.temporaryZoomOutAniamtion()
+//        show(message: "今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子")
+        testView.simple(move: 50, to: .right, withDuration: 0.3)
+
     }
 
     @IBAction func reloadCalendarView(_ sender: UIButton) {

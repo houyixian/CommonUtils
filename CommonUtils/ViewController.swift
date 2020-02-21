@@ -25,6 +25,13 @@ class ViewController: UIViewController {
         }
         let testString = "1860032718"
 //        print(testString.)
+        let color = UIColor(hexColor: "#ffffff")
+        print(color)
+        view.backgroundColor = color
+        let base64 = "iOS Developer Tips encoded in Base64".base64Encode
+        print(base64)
+        let base64Encode = "aU9TIERldmVsb3BlciBUaXBzIGVuY29kZWQgaW4gQmFzZTY0"
+        print(base64Encode.base64Decode)
 //        let dashedLine = AUDashedLineView(frame: CGRect.zero, lineLength: 10, lineSpacing: 2, lineColor: .black, direction: .Vertical)
 //        view.addSubview(dashedLine)
         // 水平方向的虚线约束
@@ -63,7 +70,10 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        show(message: "今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子今天是个好日子")
-        testView.simple(move: 50, to: .right, withDuration: 0.3)
+//        testView.simple(move: 50, to: .right, withDuration: 0.3)
+        let navigationController = UINavigationController(rootViewController: RedViewController())
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
 
     }
 

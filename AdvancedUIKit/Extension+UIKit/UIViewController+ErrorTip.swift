@@ -38,3 +38,26 @@ extension UIViewController {
     }
 }
 
+extension UIViewController: UIGestureRecognizerDelegate {
+    /*
+     1.如果想要禁用整个navigationController的右滑返回手势，
+     只需要调用一次disableBackSwipeGesture()即可。
+     2.如果想要禁用navigationController的vc栈中的某一个vc的右滑返回手势，
+     则在该vc的viewDidAppear中加入disableBackSwipeGesture()，
+     在viewWillDisapper中加入enableBackSwipeGesture()即可.
+     */
+    public func disableBackSwipeGesture() {
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+
+    public func enableBackSwipeGesture() {
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+    }
+
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return false
+    }
+}
+

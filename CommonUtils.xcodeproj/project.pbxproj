@@ -24,6 +24,9 @@
 		582962BD23793D0700BD7D12 /* UIViewController+ErrorTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962BC23793D0700BD7D12 /* UIViewController+ErrorTip.swift */; };
 		582962C023793E1300BD7D12 /* AUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962BF23793E1300BD7D12 /* AUViewController.swift */; };
 		5837C88E23FD5269000AF1D6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837C88D23FD5269000AF1D6 /* UIColor+Extension.swift */; };
+		5837C89223FE6D97000AF1D6 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837C89123FE6D97000AF1D6 /* RedViewController.swift */; };
+		5837C89423FE7528000AF1D6 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837C89323FE7528000AF1D6 /* BlueViewController.swift */; };
+		5837C89623FE75A6000AF1D6 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837C89523FE75A6000AF1D6 /* GreenViewController.swift */; };
 		585B78AC237981D10003C932 /* AUToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B78AB237981D10003C932 /* AUToastView.swift */; };
 		586CFED023855FC400527061 /* AUCalendarSectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586CFECC23855FC400527061 /* AUCalendarSectionHeaderCollectionReusableView.swift */; };
 		586CFED123855FC400527061 /* AUCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586CFECD23855FC400527061 /* AUCalendarView.swift */; };
@@ -96,6 +99,9 @@
 		582962BC23793D0700BD7D12 /* UIViewController+ErrorTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorTip.swift"; sourceTree = "<group>"; };
 		582962BF23793E1300BD7D12 /* AUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUViewController.swift; sourceTree = "<group>"; };
 		5837C88D23FD5269000AF1D6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5837C89123FE6D97000AF1D6 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		5837C89323FE7528000AF1D6 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		5837C89523FE75A6000AF1D6 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		585B78AB237981D10003C932 /* AUToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUToastView.swift; sourceTree = "<group>"; };
 		586CFECC23855FC400527061 /* AUCalendarSectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUCalendarSectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		586CFECD23855FC400527061 /* AUCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUCalendarView.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 				5805F10A2367EB5A003FDFD4 /* LaunchScreen.storyboard */,
 				5805F10D2367EB5A003FDFD4 /* Info.plist */,
 				582962B823790B7F00BD7D12 /* AdvancedUIKit.podspec */,
+				5837C89123FE6D97000AF1D6 /* RedViewController.swift */,
+				5837C89323FE7528000AF1D6 /* BlueViewController.swift */,
+				5837C89523FE75A6000AF1D6 /* GreenViewController.swift */,
 			);
 			path = CommonUtils;
 			sourceTree = "<group>";
@@ -409,8 +418,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5837C89623FE75A6000AF1D6 /* GreenViewController.swift in Sources */,
+				5837C89223FE6D97000AF1D6 /* RedViewController.swift in Sources */,
 				5805F1042367EB59003FDFD4 /* ViewController.swift in Sources */,
 				5805F1002367EB59003FDFD4 /* AppDelegate.swift in Sources */,
+				5837C89423FE7528000AF1D6 /* BlueViewController.swift in Sources */,
 				5805F1022367EB59003FDFD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

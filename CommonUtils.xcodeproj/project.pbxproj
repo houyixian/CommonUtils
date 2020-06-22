@@ -17,6 +17,7 @@
 		5805F1072367EB59003FDFD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5805F1052367EB59003FDFD4 /* Main.storyboard */; };
 		5805F1092367EB5A003FDFD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5805F1082367EB5A003FDFD4 /* Assets.xcassets */; };
 		5805F10C2367EB5A003FDFD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5805F10A2367EB5A003FDFD4 /* LaunchScreen.storyboard */; };
+		5828D95124A095570034D260 /* AULoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828D95024A095570034D260 /* AULoadingView.swift */; };
 		582962B523790A1D00BD7D12 /* AUHorizontalDashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962B223790A1D00BD7D12 /* AUHorizontalDashedLineView.swift */; };
 		582962B623790A1D00BD7D12 /* AUHollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962B323790A1D00BD7D12 /* AUHollowView.swift */; };
 		582962B723790A1D00BD7D12 /* AUGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582962B423790A1D00BD7D12 /* AUGradientView.swift */; };
@@ -92,6 +93,7 @@
 		5805F1082367EB5A003FDFD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5805F10B2367EB5A003FDFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5805F10D2367EB5A003FDFD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5828D95024A095570034D260 /* AULoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AULoadingView.swift; sourceTree = "<group>"; };
 		582962B223790A1D00BD7D12 /* AUHorizontalDashedLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUHorizontalDashedLineView.swift; sourceTree = "<group>"; };
 		582962B323790A1D00BD7D12 /* AUHollowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUHollowView.swift; sourceTree = "<group>"; };
 		582962B423790A1D00BD7D12 /* AUGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUGradientView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				582962B223790A1D00BD7D12 /* AUHorizontalDashedLineView.swift */,
 				585B78AB237981D10003C932 /* AUToastView.swift */,
 				5803E0EE23FA75F7000AE071 /* AUDashedLineView.swift */,
+				5828D95024A095570034D260 /* AULoadingView.swift */,
 			);
 			path = AdvancedUIView;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586CFED123855FC400527061 /* AUCalendarView.swift in Sources */,
+				5828D95124A095570034D260 /* AULoadingView.swift in Sources */,
 				586CFED523856BA400527061 /* MyCollection.swift in Sources */,
 				585B78AC237981D10003C932 /* AUToastView.swift in Sources */,
 				582962BD23793D0700BD7D12 /* UIViewController+ErrorTip.swift in Sources */,
